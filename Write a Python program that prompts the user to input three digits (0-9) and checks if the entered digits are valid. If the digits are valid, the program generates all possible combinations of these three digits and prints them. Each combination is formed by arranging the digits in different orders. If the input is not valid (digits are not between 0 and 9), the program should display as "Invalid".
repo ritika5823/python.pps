@@ -1,0 +1,15 @@
+def is_valid(d):
+	return 0 <= d <=9
+digit1 = int(input("digit1 (0-9): "))
+digit2 = int(input("digit2 (0-9): "))
+digit3 = int(input("digit3 (0-9): "))
+if all(is_valid(d) for d in [digit1, digit2, digit3]):
+	digits = [digit1, digit2, digit3]
+	for i in range(3):
+		for j in range(3):
+			for k in range (3):
+				if i != j and j != k and i != k: 
+					print(f"{digits[i]}{digits[j]}{digits[k]}")
+
+else:
+	print("Invalid")
