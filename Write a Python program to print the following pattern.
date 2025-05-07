@@ -1,0 +1,5 @@
+def print_p(n):
+	for i in range(n, 0, -1):
+		print("* "*i)
+number = int(input("Enter a number : "))
+print_p(number)
