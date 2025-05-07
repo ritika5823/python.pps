@@ -1,0 +1,7 @@
+pi = 3.14
+a = float(input("Enter the radius : "))
+if a<0 or a>100:
+	print("Enter a positive value upto 100")
+else:
+	c = pi*a**2
+	print(f"Area of circle = {c:.6f}" )
