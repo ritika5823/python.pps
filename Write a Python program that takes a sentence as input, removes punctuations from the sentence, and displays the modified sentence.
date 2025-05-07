@@ -1,0 +1,5 @@
+import string 
+def remove(s):
+	return ' '.join(''.join(char for char in s if char not in string.punctuation).split())
+s = input()
+print(remove(s))
